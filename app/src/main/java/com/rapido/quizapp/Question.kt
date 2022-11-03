@@ -6,15 +6,15 @@ what kind of information it need.
 */
 
 data class Question(
-    val id : Int, // -> for question number
-    val questions : String, // -> for the question statement
-    val image : Int, // -> for the images in the question
+    val id: Int, // -> for question number
+    val question: String, // -> for the question statement
+    val image: Int, // -> for the images in the question
 
     // for the 4 options in the question
-    val optionOne : String,
-    val optionTwo : String,
-    val optionThree : String,
-    val optionFour : String,
+    val optionOne: String,
+    val optionTwo: String,
+    val optionThree: String,
+    val optionFour: String,
 
-    val correctAnswer : Int
+    val correctAnswer: Int
 )
