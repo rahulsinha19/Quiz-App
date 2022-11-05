@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
                 // "QuizQuestionsActivity" represents the destination activity
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
 
+                // for sending extra information from one activity to another
+                intent.putExtra(Constants.USER_NAME, etName.text.toString())
                 // need to start the activity, else it will not start
                 startActivity(intent)
 
