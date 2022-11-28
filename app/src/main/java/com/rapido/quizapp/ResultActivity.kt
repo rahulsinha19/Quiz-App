@@ -23,6 +23,7 @@ class ResultActivity : AppCompatActivity() {
         tvScore.text = "Your score is $correctAnswers out of $totalQuestions"
 
         btnFinish.setOnClickListener {
+            // takes back to the home screen after the end of quiz
             startActivity(Intent(this, MainActivity::class.java))
         }
     }

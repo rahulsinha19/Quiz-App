@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         val etName : EditText = findViewById(R.id.et_name)
 
         btnStart.setOnClickListener {
-            if(etName.text.isEmpty()) {
+            if(etName.text.toString().isEmpty()) {
                 Toast.makeText(this, "Please enter a name to proceed!!", Toast.LENGTH_SHORT).show()
             } else {
                 // code for going from one screen to another
